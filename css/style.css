@@ -420,7 +420,7 @@ ul {
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform var(--function-durection);
-    padding: 72px 16px 24px 16px;
+    padding: 72px 16px 16 px 16px;
 }
 
 .modal-close-buttom {
