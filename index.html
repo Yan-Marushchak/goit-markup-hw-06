@@ -33,7 +33,7 @@
 
           <!-- Menu -->
 
-          <ul class="list menu-list">
+          <ul class="menu-list list">
             <li class="menu-item">
               <a class="menu-link link current" href="./index.html">Studio</a>
             </li>
@@ -45,6 +45,18 @@
             </li>
           </ul>
         </nav>
+
+        <button class="mobile-menu-open-buttom js-open-menu" type="button">
+          <svg
+            class="mobile-menu-container-open-buttom-icon"
+            width="32"
+            height="22"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
 
         <!-- Address -->
 
@@ -62,6 +74,82 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <!-- -- Mobile Menu -->
+      <div class="mobail-menu" data-menu>
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+          <button
+            class="mobile-menu-container-close-buttom js-close-menu"
+            type="button"
+          >
+            <svg
+              class="mobile-menu-container-close-buttom-icon"
+              width="8"
+              height="8"
+              aria-label="close mobile menu icon"
+            >
+              <use href="./images/icons.svg#icon-close-buttom"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-navi-list list">
+            <li class="mobile-menu-navi-item">
+              <a class="mobile-menu-navi-link link active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-navi-item">
+              <a class="mobile-menu-navi-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-navi-item">
+              <a class="mobile-menu-navi-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="menu-contack-list list">
+            <li>
+              <a href="tel:+110001111111" class="menu-contact-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="menu-email-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-soc-list list">
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svgicon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svgicon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svgicon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -81,8 +169,8 @@
       <!-- section 2 -->
       <!-- Offers -->
 
-      <section class="offers">
-        <div class="container">
+      <section class="offers offers-section">
+        <div class="container mobile-container">
           <!-- Hidden header -->
           <h2 class="visually-hidden">Hidden</h2>
           <ul class="offers-list list">
@@ -141,7 +229,8 @@
       <!-- section 3 -->
       <!-- What are we doing -->
 
-      <section class="work">
+      --
+      <section class="work section">
         <div class="work-container container">
           <h2 class="work-title">What are we doing</h2>
           <ul class="work-list list">
@@ -491,12 +580,12 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="modal-close-buttom" type="button" data-modal-close>
-          <svg class="modal-close-icon" width="8" height="8">
+          <svg class="modal-close-buttom-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-buttom"></use>
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form class="">
+        <form class="modal-form">
           <div class="modal-form-container">
             <label class="modal-label" for="user-name">Name</label>
 
@@ -595,6 +684,14 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
