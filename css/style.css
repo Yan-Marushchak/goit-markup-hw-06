@@ -203,7 +203,6 @@ placeholder {
 }
 
 .mobile-menu-open-buttom {
-    background-color: transparent;
     padding: 0;
     height: 32px;
     border: none;
@@ -218,11 +217,6 @@ placeholder {
     font-style: normal;
     margin-left: auto;
     display: none;
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-    color: var(--color-ocean);
 }
 
 .contacts-list {
@@ -240,6 +234,11 @@ placeholder {
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color var(--function-durection);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--color-ocean);
 }
 
 /* Modal window */
@@ -663,6 +662,7 @@ placeholder {
 
     .mobile-header-item {
         margin-bottom: auto;
+        padding-bottom: 120px;
     }
 
     .mobile-social-menu {
@@ -682,21 +682,13 @@ placeholder {
 
 }
 
-
-
-
-
 .mbl-icon-menu {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-.menu-mobile-navigsn {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
+
 
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -1095,7 +1087,8 @@ placeholder {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    color: var(--color-navy-blue)
+    color: var(--color-navy-blue);
+    padding-top: 120px;
 }
 
 .customers-list {
