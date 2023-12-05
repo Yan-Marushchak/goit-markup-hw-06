@@ -641,7 +641,7 @@ placeholder {
 
     .btn-model-cloused:hover,
     .btn-model-cloused:focus {
-        background-color: var(--color-ocean);
+        background-color: var(--color-iris);
     }
 
     .btn-model-cloused-icon:hover .btn-model-cloused,
@@ -666,7 +666,7 @@ placeholder {
 
     .menu-item-mobile:hover,
     .menu-item-mobile:focus {
-        color: var(--color-white);
+        color: var(--color-iris);
     }
 
     .menu-item-mobile {
@@ -692,12 +692,12 @@ placeholder {
 
     .mobile-mail-hdr:hover,
     .mobile-mail-hdr:focus {
-        color: var(--color-ocean);
+        color: var(--color-iris);
     }
 
     .mobile-social-menu:hover,
     .mobile-social-menu:focus {
-        color: var(--color-ocean);
+        color: var(--color-iris);
     }
 
     .mobile-adress-tel {
@@ -1073,7 +1073,6 @@ placeholder {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
-    margin-top: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: calc(24 /20);
@@ -1128,7 +1127,6 @@ placeholder {
     font-weight: 700;
     line-height: 1.11;
     color: var(--color-navy-blue);
-    padding-top: 120px;
 }
 
 .customers-list {
@@ -1137,7 +1135,6 @@ placeholder {
     gap: 16px;
     row-gap: 72px;
     flex-wrap: wrap;
-    margin-bottom: 96px;
 }
 
 @media screen and (min-width: 768px) {
